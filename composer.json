@@ -1,0 +1,17 @@
+{
+    "name": "secom-tocantins/cache",
+    "type": "library",
+    "description": "Secom Simple Cache",
+    "license": "BSD Style",
+    "authors": [
+        {
+            "name": "Carlos André Ferrari",
+            "email": "caferrari@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Secom\\Cache": "library\/"
+        }
+    }
+}
