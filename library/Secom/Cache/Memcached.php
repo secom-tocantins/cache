@@ -16,15 +16,15 @@ class Memcached implements Cacheable
         if (!count($stats)) {
             throw new RuntimeException('No memcached server defined!');
         }
-        
+
         foreach ($stats as $stat) {
             if ($stat['pid'] !== -1) return;
         }
-        
+
         throw new RuntimeException('Memcached not running!');
     }
 
-    public function set($key, $value, $ttl = 300) {
+    public function set($key, $value, $ttl = 0) {
         $this->memcache->set($key, $value, $ttl);
     }
 
